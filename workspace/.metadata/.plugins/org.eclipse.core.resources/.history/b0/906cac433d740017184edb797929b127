@@ -1,0 +1,12 @@
+package Collections;
+
+public class Employee {
+	int EmpId;
+	String EmpName;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

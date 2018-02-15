@@ -1,0 +1,38 @@
+package Scenarios;
+
+import java.io.IOException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+//import com.gargoylesoftware.htmlunit.javascript.host.URL;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase {
+
+	@Test
+	public void selectMenu() throws IOException {
+		URL url =  new URL("https://google.com");
+		System.out.println(url.getProtocol());
+		System.out.println(url.getDefaultPort());
+		URLConnection u = url.openConnection();
+		Map<String, List<String>> map = u.getHeaderFields();
+		Set<Entry<String, List<String>>> set = map.entrySet();
+		
+		for(Map.Entry<String, List<String>> e:set )
+		{
+			System.out.println(e.getKey());
+			System.out.println(e.getValue());
+		}
+		
+		
+	}
+
+}

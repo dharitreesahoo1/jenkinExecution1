@@ -1,0 +1,26 @@
+	/**
+ * 
+ */
+package com.Test.Automation.uiAutomation.homePage;
+
+import org.testng.annotations.BeforeTest;
+
+/**
+ * @author home
+ *
+ */
+public class TC001_verifyLoginWithInvalidCredential {
+	@BeforeTest
+	public void setUp()
+	{
+		
+	}
+	public void verifyLoginWithInvalidCredential()
+	{
+		
+	}
+	public void endTest()
+	{
+		
+	}
+}

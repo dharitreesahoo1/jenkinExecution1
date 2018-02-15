@@ -1,0 +1,32 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class ComaparatorExample1 {
+
+	public static void main(String[] args) {
+		List<Integer> numbers =  new ArrayList<Integer>();
+		numbers.add(234);
+		numbers.add(677);
+		numbers.add(111);
+		numbers.add(999);
+		
+		Collections.sort(numbers);
+		Collections.sort(numbers , new Comparator<Integer>(){
+
+			@Override
+			public int compare(Integer arg0, Integer arg1) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+
+		
+		});
+		
+
+	}
+
+}

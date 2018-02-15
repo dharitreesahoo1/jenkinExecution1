@@ -1,0 +1,8 @@
+package config;
+
+import java.util.Properties;
+
+public class LoadPropertiesFile {
+	Properties properties;
+
+}

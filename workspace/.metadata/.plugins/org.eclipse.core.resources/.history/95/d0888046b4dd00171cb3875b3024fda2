@@ -1,0 +1,26 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		ArrayList lst = new ArrayList();
+		lst.add(123);
+		lst.add(345);
+		//Collections.sort(lst);
+		//Collections.reverse(lst);
+		Iterator it = lst.iterator();
+		System.out.println(it.next());
+		while(it.hasNext())
+		{
+		System.out.println(it.next());	
+		}
+		
+		
+
+	}
+
+}

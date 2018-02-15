@@ -1,0 +1,29 @@
+package corejavaProgramming;
+
+public class DistinctElementInArr {
+
+	public static void main(String[] args) {
+		int arr[]={6,5,5,6,6,8};
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			boolean bln=true;
+			for(int j=0;j<i;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					bln=false;
+					break;
+					
+				}
+			}
+			if(bln=true)
+			{
+				System.out.println("Distinct element is"+arr[i]);
+			}
+
+		}
+		
+	}
+
+}

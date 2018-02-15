@@ -1,0 +1,7 @@
+package Scenarios;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase{
+
+}

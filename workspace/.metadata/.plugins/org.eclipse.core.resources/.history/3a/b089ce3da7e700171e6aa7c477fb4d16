@@ -1,0 +1,19 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.*;
+
+public class StringSorting {
+
+	public static void main(String[] args) {
+		List<String> empList =  new ArrayList<>();
+		empList.add("jini");
+		empList.add("mamam");
+		empList.add("tini");
+		empList.add("kuni");
+		
+		Collections.sort(empList);
+
+	}
+
+}

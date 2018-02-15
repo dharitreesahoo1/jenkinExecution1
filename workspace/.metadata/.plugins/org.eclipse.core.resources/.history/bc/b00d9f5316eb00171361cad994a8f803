@@ -1,0 +1,12 @@
+package Collections;
+
+public class PositionOfLetter {
+
+	public static void main(String[] args) {
+		String str = "Dharitree";
+		Char ch =  str.charAt(5);
+		
+
+	}
+
+}

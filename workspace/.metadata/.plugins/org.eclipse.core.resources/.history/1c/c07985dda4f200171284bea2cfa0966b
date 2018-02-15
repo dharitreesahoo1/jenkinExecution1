@@ -1,0 +1,73 @@
+package Collections;
+
+import java.util.*;
+import java.util.Collection.*;
+
+class sortByID implements Comparator<EmpList> {
+
+	@Override
+	public int compare(EmpList o1, EmpList o2) {
+		// TODO Auto-generated method stub
+		return o1.EmpId - o2.EmpId;
+	}
+
+}
+
+public class EmpList {
+	int EmpId;
+	String EmpName;
+
+	EmpList(int empID, String empName) {
+		EmpId = empID;
+		EmpName = empName;
+	}
+
+	public int getEmpId() {
+		return EmpId;
+	}
+
+	public void setEmpId(int empId) {
+		EmpId = empId;
+	}
+
+	public String getEmpName() {
+		return EmpName;
+	}
+
+	public void setEmpName(String empName) {
+		EmpName = empName;
+	}
+
+	public void display() {
+		System.out.println("EmpID is " + EmpId + "EmpName is" + EmpName);
+	}
+
+	@Override
+	public String toString() {
+		return EmpId + ":" + EmpName;
+	}
+
+	public int compare(EmpList obj1, EmpList obj2) {
+		// TODO Auto-generated method stub
+		return obj1.EmpId - obj2.EmpId;
+	}
+
+}
+
+class EmpList1 {
+
+	public static void main(String[] args) {
+		List<Employee> lst = new ArrayList<Employee>();
+		lst.add(new EmpList(200, "delhi"));
+		lst.add(new EmpList(40, "mumbai"));
+		lst.add(new EmpList(300, "bangalore"));
+
+		Collections.sort(lst, new sortByID());
+
+		for (EmpList e : lst) {
+			System.out.println(e);
+		}
+
+	}
+
+}

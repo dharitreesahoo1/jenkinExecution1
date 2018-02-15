@@ -1,0 +1,41 @@
+package com.Test.Automation.uiAutomation.testBase;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.junit.rules.Timeout;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBase {
+	public static final Logger log =Logger.getLogger(TestBase.class.getName());
+	public WebDriver driver;
+	String browser="chrome";
+	String url="http://automationpractice.com/index.php";
+	
+	public void init()
+	{
+		selectBrowser(browser);
+		getURL(url);
+		String log4jPath="log4j.properties";
+		PropertyConfigurator.configure(log4jPath);
+	}
+	public void selectBrowser(String browser)
+	{
+		if(browser.equalsIgnoreCase("Chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
+			log.info("===================driver launched====================");
+			driver=new ChromeDriver();
+		}
+			
+	}
+	public void getURL(String url)
+	{
+		driver.get(url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	}
+
+}

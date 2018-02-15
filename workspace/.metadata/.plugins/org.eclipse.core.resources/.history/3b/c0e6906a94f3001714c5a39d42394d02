@@ -1,0 +1,20 @@
+package Scenarios;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase{
+
+	@Test
+	public void selectMenu()
+	{
+				String strDiver  = getData("driver");
+			System.out.println(strDiver);
+		}
+	
+
+}

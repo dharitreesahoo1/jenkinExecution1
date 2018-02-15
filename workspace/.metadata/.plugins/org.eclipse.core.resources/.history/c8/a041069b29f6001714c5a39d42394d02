@@ -1,0 +1,18 @@
+
+public class Arrays {
+	public static void addArrays(Object ...arr)
+	{
+		for(Object eachArray:arr)
+		{
+			System.out.println(eachArray.toString());
+		}
+	}
+
+	public static void main(String[] args) {
+		int[] arr1= {234,567,654};
+		String[] arr2 = {"anc","def","gfr"};
+		addArrays(arr1,arr2);
+
+	}
+
+}

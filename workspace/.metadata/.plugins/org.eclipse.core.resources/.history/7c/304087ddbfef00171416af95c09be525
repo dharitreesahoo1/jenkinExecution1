@@ -1,0 +1,21 @@
+package Strings;
+
+public class ReverseAString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "dharitree%^&**sahoo";
+		String strREv;
+		int len =  str.length();
+		for(int i=len;i>=0;i--)
+		{
+		char ch =  str.charAt(i);
+		if(ch>'a' || ch<'z')
+		{
+			System.out.println(ch);
+		}
+		}
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SortingWithComparator {
+
+	public static void main(String[] args) {
+	
+
+	}
+	
+	public void addName()
+	{
+		ArrayList <String> lst =  new ArrayList<String>();
+		lst.add("dharitree");
+		lst.add("mamata");
+		lst.add("jharana");
+		lst.add("kiran");
+	}
+	
+	public void displayName(ArrayList<String> lst)
+	{
+		for(String name:lst)
+		{
+			
+		}
+	}
+
+}

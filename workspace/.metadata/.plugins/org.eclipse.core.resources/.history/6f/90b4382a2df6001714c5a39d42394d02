@@ -1,0 +1,11 @@
+
+public class CommonEleOfTwoArry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr1 = {234,567,765};
+		int[] arr1 = {234,568,768};
+
+	}
+
+}

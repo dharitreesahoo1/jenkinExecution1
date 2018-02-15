@@ -1,0 +1,69 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Person
+{
+	private int ID;
+	private int sal;
+	private String name;
+	
+	
+	public Person(int iD, int sal, String name) {
+		super();
+		ID = iD;
+		this.sal = sal;
+		this.name = name;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public int getSal() {
+		return sal;
+	}
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "ID and name " + ID;
+	}
+	
+	
+}
+
+
+public class ComparatorExample {
+
+	public static void main(String[] args) {
+		
+		List <Person> empList = new ArrayList<>();
+		empList.add(new Person(22,40000,"jini"));
+		empList.add(new Person(44,70000,"mini"));
+		empList.add(new Person(11,10000,"tini"));
+		empList.add(new Person(33,20000,"rini"));
+		
+		for(Employee emp:empList)
+		{
+			System.out.println(emp);
+		}
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

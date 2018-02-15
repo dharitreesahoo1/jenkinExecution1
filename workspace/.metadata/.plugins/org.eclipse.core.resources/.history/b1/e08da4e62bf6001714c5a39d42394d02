@@ -1,0 +1,27 @@
+
+public class Arrays {
+	public static void addArrays(int[] ...arr)
+	{
+		for(Object eachArray:arr)
+		{
+			for(Object eachItem:eachArray)
+			{
+				
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		int[] arr1= {234,567,654};
+		int[] arr2= {237,564,655};
+		//String[] arr2 = {"anc","def","gfr"};
+		addArrays(arr1,arr2);
+
+	}
+
+	private static void addArrays(int[] arr1, String[] arr2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

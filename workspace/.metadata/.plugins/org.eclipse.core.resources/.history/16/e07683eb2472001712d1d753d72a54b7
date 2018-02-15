@@ -1,0 +1,20 @@
+package corejavaProgramming;
+
+public class ReverseAString {
+	
+	public static String reverseString(String s)
+	{
+		char[] ch = s.toCharArray();
+		for(int i=ch.length;i>0;i--)
+		{
+			System.out.println(ch[i]);
+		}
+		
+	}
+	public static void main(String[] args) {
+		String s = reverseString("dharitree");
+		System.out.println(s);
+		
+	}
+
+}

@@ -1,0 +1,48 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class SortingWithComparator implements Comparator{
+
+	private static final Comparator Comparator = null;
+
+	public static void main(String[] args) {
+		ArrayList<String> names = addName();
+		System.out.println("==============Before Sort================");
+		displayName(names);
+		//Collections.sort(names,Comparator <String> );
+		Collections.sort(names, new Comparator()
+				{
+
+			@Override
+			public int compare(Object arg0, Object arg1) {
+				// TODO Auto-generated method stub
+				return -1;
+			}
+				});
+		System.out.println("==============After Sort================");
+		displayName(names);
+	}
+	
+	public static ArrayList<String> addName()
+	{
+		ArrayList <String> lst =  new ArrayList<String>();
+		lst.add("dharitree");
+		lst.add("mamata");
+		lst.add("jharana");
+		lst.add("kiran");
+		return lst;
+	}
+	
+	public static void displayName(ArrayList<String> lst)
+	{
+		for(String name:lst)
+		{
+			System.out.println(name);
+		}
+	}
+
+
+}

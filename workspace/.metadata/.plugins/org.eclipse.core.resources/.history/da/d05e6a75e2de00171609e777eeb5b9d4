@@ -1,0 +1,11 @@
+
+public class DeleteDuplicate {
+
+	public static void main(String[] args) {
+		String s = "dharitree";
+		String sNew = "";
+		
+
+	}
+
+}

@@ -1,0 +1,64 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employee
+{
+	int ID;
+	int sal;
+	String name;
+	
+	
+	public Employee(int iD, int sal, String name) {
+		super();
+		ID = iD;
+		this.sal = sal;
+		this.name = name;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public int getSal() {
+		return sal;
+	}
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "ID and name " + ID;
+	}
+	
+	
+}
+
+
+public class ComparatorExample {
+
+	public static void main(String[] args) {
+		
+		List <Employee> empList = new ArrayList<>();
+		empList.add(new Employee(22,40000,"jini"));
+		empList.add(new Employee(44,70000,"mini"));
+		empList.add(new Employee(11,10000,"tini"));
+		empList.add(new Employee(33,20000,"rini"));
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

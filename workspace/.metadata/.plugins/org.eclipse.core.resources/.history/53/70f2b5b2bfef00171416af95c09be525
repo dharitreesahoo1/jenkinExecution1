@@ -1,0 +1,16 @@
+package Strings;
+
+public class ReverseAString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "dharitree%^&**sahoo";
+		int len =  str.length();
+		for(int i=len;i>=0;i--)
+		{
+			
+		}
+
+	}
+
+}

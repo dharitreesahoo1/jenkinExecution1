@@ -1,0 +1,15 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.*;
+
+public class SortArray {
+
+	public static void main(String[] args) {
+	
+		
+		Integer [] arr ={3,6,7,8};
+		List<Integer> lst = Arrays.asList(arr);
+		Integer num = Collections.max(lst);
+		System.out.println(num);
+	}
+}

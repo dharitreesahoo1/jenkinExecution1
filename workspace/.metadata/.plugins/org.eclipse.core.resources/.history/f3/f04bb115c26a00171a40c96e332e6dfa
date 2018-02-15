@@ -1,0 +1,23 @@
+package SeleniumPractice;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class countNoOfLinks {
+
+@Test
+public void countLinks()
+{
+	WebDriver driver =  new ChromeDriver();
+	driver.get("http://facebook.com");
+	List<WebElement> links = driver.findElements(By.xpath("//a"));
+	System.out.println(links.size());
+	
+}
+
+}

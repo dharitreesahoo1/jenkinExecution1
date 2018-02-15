@@ -1,0 +1,21 @@
+package Scenarios;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase {
+
+	@Test
+	public void selectMenu() throws IOException {
+		URL url =  new URL();
+		
+		
+	}
+
+}

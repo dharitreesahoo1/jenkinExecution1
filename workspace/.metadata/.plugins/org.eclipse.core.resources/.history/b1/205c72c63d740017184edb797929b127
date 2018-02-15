@@ -1,0 +1,38 @@
+package Collections;
+
+public class Employee {
+	int EmpId;
+	String EmpName;
+	Employee(int empID,String empName)
+	{
+		EmpId = empID;
+		EmpName = empName;
+	}
+
+	public int getEmpId() {
+		return EmpId;
+	}
+
+	public void setEmpId(int empId) {
+		EmpId = empId;
+	}
+
+	public String getEmpName() {
+		return EmpName;
+	}
+
+	public void setEmpName(String empName) {
+		EmpName = empName;
+	}
+	public void display()
+	{
+		System.out.println("EmpID is "+EmpId +"EmpName is"+EmpName);
+	}
+
+	public static void main(String[] args) {
+		Employee e = new Employee(10,"Emp1");
+		
+
+	}
+
+}

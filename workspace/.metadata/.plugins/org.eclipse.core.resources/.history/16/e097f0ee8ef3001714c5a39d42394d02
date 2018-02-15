@@ -1,0 +1,18 @@
+package Scenarios;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeClass;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase{
+	@BeforeClass
+	public void init1s() throws IOException
+	{
+		init();
+		getData("driver");
+		
+	}
+
+}

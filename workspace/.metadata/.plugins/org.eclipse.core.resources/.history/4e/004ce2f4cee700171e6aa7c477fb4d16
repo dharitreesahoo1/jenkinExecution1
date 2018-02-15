@@ -1,0 +1,29 @@
+package Java;
+
+public class SortAnArrayOfIntegers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = {"Delhi","Chennai","Bangalore","kolokata","Mumbai"};
+		String temp;
+		 for(int i=0; i<5; i++)
+	        {
+	            for(int j=0; j<4; j++)
+	            {
+	                if(names[j].compareTo(names[j])>0)
+	                {
+	                    temp=names[j-1];
+	                    names[j-1]=names[j];
+	                    names[j]=temp;
+	                }
+	            }
+	        }
+		
+		for(int k=0;k<5;k++)
+		{
+			System.out.println(names[k]);
+		}
+
+	}
+
+}

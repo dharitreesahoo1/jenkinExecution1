@@ -1,0 +1,13 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class CommonEleOfTwoArry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr1 = {234,567,765};
+		int[] arr2 = {234,568,768};
+		Set<Integer> set = new HashSet<>();
+	}
+
+}

@@ -1,0 +1,17 @@
+package actiTime2018;
+
+import java.util.Random;
+
+public class RandomData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random r = new Random();
+		String firstName = "firstName" + r.nextInt();
+		String lastName = "lastName" + r.nextInt();
+		System.out.println(firstName);
+		System.out.println(lastName);
+
+	}
+
+}

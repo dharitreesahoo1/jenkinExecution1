@@ -1,0 +1,26 @@
+package Java;
+
+public class SortAString {
+
+	public static void main(String[] args) {
+		String s =  "India";
+		char[] word =  s.toCharArray();
+		
+		 for(int i=0;i<(word.length-1);i++){
+		        for(int j=i+1;j>0;j--){
+		            if(word[j]<word[j-1]){
+		                char temp=word[j-1];
+		                word[j-1]=word[j];
+		                word[j]=temp;
+		            }
+		        }
+		    }
+		
+		for(char ch:word)
+		{
+			System.out.println(ch);
+		}
+
+	}
+
+}

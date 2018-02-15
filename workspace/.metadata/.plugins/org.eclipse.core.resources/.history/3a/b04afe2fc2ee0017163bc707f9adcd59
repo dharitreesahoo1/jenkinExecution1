@@ -1,0 +1,14 @@
+package actiTime2018;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PopupHandling {
+	@Test
+	public void popup()
+	{
+		System.setProperty("webdriver.chrome.driver", "D:\\Chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	
+
+}

@@ -1,0 +1,32 @@
+package Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapWithObject {
+	public static Map<Integer, EmpList> createMap()
+	{
+		Map<Integer,EmpList>hashMap =  new HashMap<>();
+		EmpList e1 =  new EmpList(1, "Dhaitree1");
+		EmpList e2 =  new EmpList(2, "Dhaitree2");
+		EmpList e3 =  new EmpList(3, "Dhaitree3");
+		EmpList e4 =  new EmpList(4, "Dhaitree4");
+		hashMap.put(e1.EmpId,e1);
+		hashMap.put(e2.EmpId,e2);
+		hashMap.put(e3.EmpId,e3);
+		hashMap.put(e4.EmpId,e4);
+		return hashMap;
+	}
+
+	public static void main(String[] args) {
+		
+		Map<Integer, EmpList> map = createMap();
+		for(Integer key:map.keySet())
+		{
+			EmpList emp = map.get(key);
+			System.out.println(emp.EmpName);
+		}
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package config;
+
+import java.util.Properties;
+
+public class LoadPropertiesFile {
+	Properties properties;
+	
+	public void readData()
+	{
+		properties = new Properties();
+	}
+
+}

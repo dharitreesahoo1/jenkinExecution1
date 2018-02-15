@@ -1,0 +1,14 @@
+package Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapWithObject {
+
+	public static void main(String[] args) {
+		Map<Integer,Object>hashMap =  new HashMap<>();
+		Employee e =  new Employee(1, "Dhaitree");
+
+	}
+
+}

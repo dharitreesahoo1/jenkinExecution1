@@ -1,0 +1,14 @@
+package Java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ComaparatorExample1 {
+
+	public static void main(String[] args) {
+		List<Integer> numbers =  new ArrayList<Integer>();
+		numbers.add(arg0);
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Java;
+
+public class SortingWithComparator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void addName()
+	{
+		ArrayList <String> lst =  new ArrayList<String>();
+	}
+
+}

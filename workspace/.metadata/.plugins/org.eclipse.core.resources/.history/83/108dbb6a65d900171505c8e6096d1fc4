@@ -1,0 +1,11 @@
+
+public class ExtractNumbers {
+
+	public static void main(String[] args) {
+		String str = "dharitree123";
+		String str1 = str.replaceAll("[//D+]", "");
+		System.out.println(str1);
+
+	}
+
+}

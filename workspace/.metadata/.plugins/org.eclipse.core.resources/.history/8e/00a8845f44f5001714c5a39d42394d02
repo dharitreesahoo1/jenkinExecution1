@@ -1,0 +1,25 @@
+package Scenarios;
+
+import java.io.IOException;
+import java.net.URL;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+//import com.gargoylesoftware.htmlunit.javascript.host.URL;
+
+import Base.TestBase;
+
+public class MenuSelect extends TestBase {
+
+	@Test
+	public void selectMenu() throws IOException {
+		URL url =  new URL("https://google.com");
+		System.out.println(url.getProtocol());
+		System.out.println(url.getDefaultPort());
+		url.openConnection();
+		
+		
+	}
+
+}

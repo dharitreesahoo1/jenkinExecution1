@@ -1,0 +1,15 @@
+package Test1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.*;
+
+public class test1_1 {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("www.gmail.com");
+
+	}
+
+}

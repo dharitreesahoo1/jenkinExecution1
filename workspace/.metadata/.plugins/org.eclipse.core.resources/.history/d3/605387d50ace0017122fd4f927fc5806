@@ -1,0 +1,18 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		ArrayList lst = new ArrayList();
+		lst.add(123);
+		lst.add(345);
+		Collections.sort(lst);
+		System.out.println(lst);
+		
+
+	}
+
+}

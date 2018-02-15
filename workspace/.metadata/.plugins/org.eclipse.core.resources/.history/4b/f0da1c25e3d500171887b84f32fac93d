@@ -1,0 +1,29 @@
+package Java;
+
+import java.util.ArrayList;
+
+public class SortingWithComparator {
+
+	public static void main(String[] args) {
+	
+
+	}
+	
+	public void addName()
+	{
+		ArrayList <String> lst =  new ArrayList<String>();
+		lst.add("dharitree");
+		lst.add("mamata");
+		lst.add("jharana");
+		lst.add("kiran");
+	}
+	
+	public void displayName()
+	{
+		for(String name:lst)
+		{
+			
+		}
+	}
+
+}

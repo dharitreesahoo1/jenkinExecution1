@@ -1,0 +1,27 @@
+package Java;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class SortMapWithValue {
+	
+
+	public static void main(String[] args) {
+		Map <String,Integer> hasMap = new HashMap<String,Integer>();
+		hasMap.put("one", 1);
+		hasMap.put("two", 2);
+		hasMap.put("three", 3);
+		hasMap.put("four", 4);
+		//System.out.println(hasMap);
+		
+		List<Entry<String,Integer>> lst =  new LinkedList<Entry<String,Integer>> (hasMap.entrySet());
+		//System.out.println(lst);
+		
+
+
+	}
+
+}

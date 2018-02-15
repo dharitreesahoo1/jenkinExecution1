@@ -1,0 +1,39 @@
+	/**
+ * 
+ */
+package com.Test.Automation.uiAutomation.homePage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+/**
+ * @author home
+ *
+ */
+public class TC001_verifyLoginWithInvalidCredential {
+	WebDriver driver;
+	@BeforeTest
+	public void setUp()
+	{
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver.exe");
+		driver=new FirefoxDriver();
+		driver.get("http://automationpractice.com/index.php");
+	}
+	@Test
+	public void verifyLoginWithInvalidCredential()
+	{
+		driver.findElement(By.xpath("")).click();
+		driver.findElement(By.xpath("")).click();
+		driver.findElement(By.xpath("")).click();
+		driver.findElement(By.xpath("")).click();
+		
+	}
+	
+	public void endTest()
+	{
+		
+	}
+}

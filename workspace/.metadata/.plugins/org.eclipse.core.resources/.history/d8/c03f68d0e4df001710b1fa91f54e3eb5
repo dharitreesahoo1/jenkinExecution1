@@ -1,0 +1,17 @@
+package Java;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class SortMapWithValue {
+
+	public static void main(String[] args) {
+		Map <String,Integer> hasMap = new HashMap<>();
+		hasMap.put("one", 1);
+		hasMap.put("two", 2);
+		hasMap.put("three", 3);
+		hasMap.put("four", 4);
+
+	}
+
+}

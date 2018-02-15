@@ -1,0 +1,11 @@
+package Collections;
+
+public class SortList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> lst =  new ArrayList<Integer>();
+
+	}
+
+}

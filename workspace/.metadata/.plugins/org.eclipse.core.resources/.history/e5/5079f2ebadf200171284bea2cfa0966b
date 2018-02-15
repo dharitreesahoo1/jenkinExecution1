@@ -1,0 +1,53 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class SortList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/////////////// Sort the Integer in list//////////////////////
+		List<Integer> lst = new ArrayList<Integer>();
+		lst.add(345);
+		lst.add(432);
+		lst.add(222);
+		lst.add(100);
+		Collections.sort(lst, new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer num1, Integer num2) {
+				// TODO Auto-generated method stub
+				return num2 - num1;
+			}
+
+		});
+
+		for (Integer num : lst) {
+			System.out.println(num);
+		}
+		////////////////// Sort the String//////////////////////
+		List<String> lst1 = new ArrayList<String>();
+		lst1.add("mama");
+		lst1.add("gelu");
+		lst1.add("hero");
+		lst1.add("mamamamm");
+		Collections.sort(lst1, new Comparator<String>() {
+
+			@Override
+			public int compare(String num1, String num2) {
+				// TODO Auto-generated method stub
+				return num2.compareTo(num1);
+			}
+
+		});
+
+		for (Integer num : lst) {
+			System.out.println(num);
+		}
+
+	}
+
+}
